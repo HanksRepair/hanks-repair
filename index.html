@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hank's Repair | Automotive Service in Menomonie, WI</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Hank’s Repair is a locally owned, one-man auto repair shop in Menomonie, WI. Offering free diagnostics and affordable car service." />
+  <meta name="keywords" content="auto repair, Menomonie WI, free diagnostics, cheap labor, Hank's Repair, mechanic, affordable auto repair, car service" />
+  <meta name="author" content="Hank's Repair" />
+  <meta property="og:title" content="Hank's Repair - Menomonie, WI" />
+  <meta property="og:description" content="Trusted one-man auto shop offering free diagnostics and affordable repairs." />
+  <meta property="og:image" content="images/logo.jpg" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/logo.jpg" alt="Hank's Repair logo" class="logo">
+        <p class="slogan">Driven by Family Values, Built on Trust.</p>
+      </div>
+
+      <nav class="main-nav">
+        <div class="dropdown">
+          <button class="nav-button dropbtn">Services</button>
+          <div class="dropdown-content">
+            <a href="#">Oil Changes</a>
+            <a href="#">Brake Repair</a>
+            <a href="#">Transmission</a>
+            <a href="#">Engine Diagnostics</a>
+            <a href="#">Tire Rotation</a>
+          </div>
+        </div>
+
+        <button class="nav-button" onclick="toggleContact()">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="split left" style="background-image: url('images/workoncar.jpg');"></div>
+    <div class="split right" style="background-image: url('images/car.jpg');"></div>
+
+    <div class="hero-text">
+      <p>Automotive Repair</p>
+      <h1>Hank's Repair</h1>
+      <h2>Menomonie, WI</h2>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="services.html" class="left-btn">Automotive Repair</a>
+    </div>
+  </section>
+
+  <!-- 🔍 SEO-Optimized Services Info -->
+  <section class="services-info">
+    <h2>One-Man Auto Repair Shop in Menomonie, WI</h2>
+    <p>Hank’s Repair is a locally owned, one-man shop where you’ll always deal directly with the owner. No middlemen, no upselling — just honest, high-quality automotive repair at affordable prices.</p>
+
+    <p>We offer <strong>free diagnostics</strong> and <strong>cheap labor rates</strong> on everything from brakes and engines to oil changes and alternators. Hank takes pride in doing the job right the first time.</p>
+
+    <p>If you’re searching for <strong>“cheap auto repair near me”</strong> or <strong>“free diagnostics Menomonie WI,”</strong> you’re in the right place. Trust Hank’s Repair — driven by family values, built on trust.</p>
+  </section>
+
+  <!-- Contact Popup -->
+  <div id="contact-popup" class="contact-popup">
+    <div class="contact-content">
+      <span class="close-btn" onclick="toggleContact()">&times;</span>
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> <a href="tel:7152359385">(715) 235-9385</a></p>
+      <p><strong>Email:</strong> <a href="mailto:hanksrepair24@gmail.com">hanksrepair24@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- Facebook Link -->
+  <a href="https://www.facebook.com/profile.php?id=61563853716038" class="facebook-link" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" class="facebook-icon">
+  </a>
+
+  <!-- Script for Contact Popup -->
+  <script>
+    function toggleContact() {
+      const popup = document.getElementById("contact-popup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
