@@ -1,0 +1,390 @@
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* ===== Header Layout ===== */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;          /* Allows wrapping on small screens */
+}
+
+/* Logo + Slogan */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 160px;             /* Adjust as needed */
+  height: auto;
+}
+
+.slogan {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  gap: 16px;                /* Space between buttons */
+}
+
+.nav-button {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: #555;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;              /* Space between logo block and nav */
+  }
+
+  .main-nav {
+    gap: 12px;
+  }
+}.site-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .slogan {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 8px;
+    font-style: italic;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #555;
+  }
+  
+
+  /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  height: 50px;
+}
+
+.slogan {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 0.3rem;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background: white;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+}
+
+/* Add translucent overlay to each half */
+.split::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust transparency here */
+  z-index: 1;
+}
+
+/* Position each half */
+.split.left {
+  left: 0;
+}
+
+.split.right {
+  left: 50%;
+}
+
+.split.left::before {
+  left: 0;
+}
+
+.split.right::before {
+  left: 0;
+}
+
+/* Center Text */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Floating Buttons */
+.hero-buttons {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  z-index: 5;
+}
+
+.left-btn,
+.right-btn {
+  background-color: red;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.facebook-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.facebook-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* Makes it white if placed on a dark background */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.facebook-icon:hover {
+  opacity: 1;
+}
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 180px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+  z-index: 20;
+  top: 40px;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Contact Popup Panel */
+.contact-popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.contact-content {
+  background-color: #1a1a1a;
+  color: white;
+  margin: 15% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.contact-content a {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+.contact-content a:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
