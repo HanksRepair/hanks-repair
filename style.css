@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 160px;
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: 8px;
+  color: #666;
+}
+
+/* Nav */
+.main-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+/* Hero Section */
+.hero {
+  margin: 20px 0;
+}
+
+.split-image {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.split-image img {
+  width: 45%;
+  height: auto;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.social-icon {
+  width: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+}

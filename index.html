@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hank's Repair | Automotive Service in Menomonie, WI</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Hank’s Repair is a locally owned, one-man auto repair shop in Menomonie, WI. Offering free diagnostics and affordable car service." />
+  <meta name="keywords" content="auto repair, Menomonie WI, free diagnostics, cheap labor, Hank's Repair, mechanic, affordable auto repair, car service" />
+  <meta name="author" content="Hank's Repair" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/logo.jpg" alt="Hank's Repair logo" class="logo">
+        <p class="slogan">Driven by Family Values, Built on Trust.</p>
+      </div>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <button class="nav-button dropbtn">Services</button>
+          <div class="dropdown-content">
+            <a href="#">Oil Changes</a>
+            <a href="#">Brake Repair</a>
+            <a href="#">Engine Diagnostics</a>
+            <a href="#">Tire Services</a>
+          </div>
+        </div>
+        <a href="#" class="nav-button" onclick="toggleContact()">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="split-image">
+      <img src="images/car.jpg" alt="Car in garage">
+      <img src="images/workingoncar.jpg" alt="Working on car">
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <div class="contact-info" id="contact-info">
+    <p><strong>Phone:</strong> <a href="tel:7152359385">715-235-9385</a></p>
+    <p><strong>Email:</strong> <a href="mailto:hanksrepair24@gmail.com">hanksrepair24@gmail.com</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Hank's Repair. All rights reserved.</p>
+    <a href="https://www.facebook.com/profile.php?id=61563853716038" target="_blank">
+      <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+    </a>
+  </footer>
+
+  <script>
+    function toggleContact() {
+      const info = document.getElementById("contact-info");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
+
