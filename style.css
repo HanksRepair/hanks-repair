@@ -1,0 +1,127 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #000;
+  color: white;
+}
+
+.header img {
+  max-width: 150px;
+  height: auto;
+}
+
+.header .slogan {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  color: #ccc;
+}
+
+/* Navigation */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #555;
+}
+
+/* Hero section with background images */
+.hero {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero .image-half {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Specific backgrounds */
+.hero .left {
+  background-image: url('workoncar.jpg');
+}
+
+.hero .right {
+  background-image: url('car.jpg');
+}
+
+/* Main Title */
+.hero .center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Contact section */
+.contact {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer img {
+  max-width: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
